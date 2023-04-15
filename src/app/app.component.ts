@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { convertDate } from './core/helpers';
 
 @Component({
   selector: 'app-root',
@@ -8,9 +7,6 @@ import { convertDate } from './core/helpers';
 })
 export class AppComponent {
   constructor(){
-    let date =new Date();
-    // dd-mm-yyyy
-    console.log(convertDate(date))
 
   }
 

@@ -9,4 +9,3 @@ export function convertDate(date:any){
         return null
       }
 }
-// dd-mm-yyyy

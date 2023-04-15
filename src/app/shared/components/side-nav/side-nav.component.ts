@@ -8,9 +8,6 @@ import { convertDate } from 'src/app/core/helpers';
 })
 export class SideNavComponent {
   constructor(){
-    let date =new Date();
-    // dd-mm-yyyy
-    console.log(convertDate(date))
   }
 
 }

@@ -12,6 +12,8 @@ import { OnlyTextArabicDirective } from './directives/only-text-arabic.directive
 import { RegisterComponent } from './layout/register/register.component';
 import { SideNavComponent } from './components/side-nav/side-nav.component';
 import { WebComponent } from './layout/web/web.component';
+import { NavAdminComponent } from './components/nav-admin/nav-admin.component';
+import { FooterAdminComponent } from './components/footer-admin/footer-admin.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { WebComponent } from './layout/web/web.component';
     AdminComponent,
     DashboardComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    NavAdminComponent,
+    FooterAdminComponent
   ],
   imports: [
     CommonModule

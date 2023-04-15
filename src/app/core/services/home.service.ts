@@ -7,7 +7,6 @@ import { environment } from 'src/environments/environments.dev';
 })
 export class HomeService {
   constructor(private _httpClient:HttpClient) { 
-    console.log(environment.baseUrl)
   }
   getData(){
     return this._httpClient.get(environment.baseUrl)

@@ -1,7 +1,18 @@
-import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+import { NgModule } from '@angular/core';
+
+const routes: Routes = [
+  {
+    path:'Admin',
+    loadChildren:()=> import('./modules/admin/admin.module').then(admin=>admin.AdminModule)
+  },
+  {
+    path:'',
+    redirectTo:'/Admin/A',
+    pathMatch:'full'
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
